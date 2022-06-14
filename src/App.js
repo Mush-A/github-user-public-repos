@@ -55,7 +55,7 @@ const App = () => {
         // If nothing in repo array: Error or no public repos. Else: Display the Cardholder
         repos.length > 0 ? (
           <CardHolder refProp={CardHolderRef}>
-            <UserCard userDetails={repos[0].owner} />
+            <UserCard userDetails={repos[0].owner} repoCount={repos.length} />
 
             {repos.map((repo, index) => {
               return <RepoCard key={index} repo={repo} />;
