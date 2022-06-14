@@ -1,6 +1,6 @@
-const CardHolder = ({children}) => {
+const CardHolder = ({refProp, children}) => {
     return (
-        <div className="cardholder">
+        <div className="cardholder" ref={refProp}>
             {children}
         </div>
     )

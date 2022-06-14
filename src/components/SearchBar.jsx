@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import "../style/SearchBar.css"
+
 const SearchBar = ({fetchRepos}) => {
     const [value, setValue] = useState("")
 
@@ -13,10 +15,10 @@ const SearchBar = ({fetchRepos}) => {
     }
 
     return (
-        <div className="searchbar">
+        <div id="search-bar">
             <form onSubmit={handleSubmit}>
-                <input type="text" onChange={handleChange} value={value}/>
-                <input type="submit" value="submit"/>
+                <input id="search-text" type="text" onChange={handleChange} value={value} placeholder="Enter github username" />
+                <input id="search-button" type="submit" value="GO"/>
             </form>
         </div>
     )
