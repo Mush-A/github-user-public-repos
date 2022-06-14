@@ -2,7 +2,7 @@ import "../style/UserCard.css"
 
 const UserCard = (props) => {
 
-    const {login, avatar_url, url} = props.userDetails
+    const {login, avatar_url, html_url} = props.userDetails
     const repoCount = props.repoCount
 
     return (
@@ -10,7 +10,7 @@ const UserCard = (props) => {
             <img className="user-image" src={avatar_url} alt={login} />
             <p className="user-name">{login}</p>
             <p>{`${repoCount} public repos`}</p>
-            <a href={url} target="_blank" rel="noopener noreferrer">visit profile</a>
+            <a href={html_url} target="_blank" rel="noopener noreferrer">visit profile</a>
         </div>
     )
 }
