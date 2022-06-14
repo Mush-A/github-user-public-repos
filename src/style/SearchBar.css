@@ -32,3 +32,21 @@
     color: white;
     background-color: #b6b6b6;
 }
+
+@media only screen and (max-width: 600px) {
+    #search-bar form {
+        flex-flow: column;
+    }
+
+    #search-bar #search-text {
+        font-size: 1.5rem;
+        width: 90%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    #search-bar #search-button {
+        font-size: 2rem;
+        width: 90%;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
