@@ -16,10 +16,19 @@
     width: 70%;
     font-size: 2rem;
     padding-left: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    outline: none;
+    border: 1px solid #b6b6b6;
 }
 
 #search-bar #search-button {
     height: 10%;
     width: 10%;
     font-size: 2rem;
+    border-radius: 0 1rem 1rem 0;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    cursor: pointer;
+    color: white;
+    background-color: #b6b6b6;
 }
